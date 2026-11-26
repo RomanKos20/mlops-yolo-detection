@@ -1,20 +1,34 @@
+# Python virtual environment
 .venv/
 __pycache__/
 *.pyc
 
+# Environment and system files
 .env
 .DS_Store
+
+# Jupyter
 .ipynb_checkpoints/
 
+# YOLO / ML artifacts
 runs/
 models/
-datasets/
-data/raw/
-data/processed/
-
 *.pt
 *.onnx
 *.engine
 *.zip
 *.tar
 *.tar.gz
+
+# Datasets are tracked by DVC, not Git
+/datasets/construction-ppe/
+/datasets/construction-ppe-small/
+!/datasets/.gitkeep
+!/datasets/*.dvc
+
+# Raw and processed data
+data/raw/
+data/processed/
+
+# Smoke test downloaded image
+bus.jpg
