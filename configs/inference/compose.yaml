@@ -1,0 +1,16 @@
+services:
+  yolo-inference:
+    build:
+      context: ../..
+      dockerfile: configs/inference/Dockerfile
+    image: yolo-inference:1.0
+    user: "${HOST_UID:-1000}:${HOST_GID:-1000}"
+    environment:
+      HOME: /tmp
+      YOLO_CONFIG_DIR: /tmp/ultralytics
+      MPLCONFIGDIR: /tmp/matplotlib
+    volumes:
+      - ../../artifacts/lab03/model/best.pt:/app/models/best.pt:ro
+      - ../../data/inference/input:/app/input:ro
+      - ../../data/inference/output:/app/output
+    restart: "no"

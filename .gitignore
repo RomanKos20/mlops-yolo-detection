@@ -38,3 +38,7 @@ data/mlflow-local/
 data/mlflow-server/
 # YOLO training runs
 runs/
+
+# Lab 05 inference inputs and results
+data/inference/input/
+data/inference/output/
