@@ -1,0 +1,2 @@
+total_epochs,best_epoch,best_precision,best_recall,best_map50,best_map50_95,final_precision,final_recall,final_map50,final_map50_95
+11,10,0.7779,0.1316,0.1332,0.0712,0.7779,0.1316,0.1332,0.0712

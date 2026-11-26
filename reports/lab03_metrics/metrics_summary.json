@@ -1,0 +1,19 @@
+{
+    "total_epochs": 11,
+    "best_epoch": 10,
+    "best_precision": 0.7779,
+    "best_recall": 0.1316,
+    "best_map50": 0.1332,
+    "best_map50_95": 0.0712,
+    "final_precision": 0.7779,
+    "final_recall": 0.1316,
+    "final_map50": 0.1332,
+    "final_map50_95": 0.0712,
+    "columns": {
+        "epoch": "epoch",
+        "precision": "metrics/precision(B)",
+        "recall": "metrics/recall(B)",
+        "map50": "metrics/mAP50(B)",
+        "map50_95": "metrics/mAP50-95(B)"
+    }
+}
