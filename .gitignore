@@ -32,3 +32,9 @@ data/processed/
 
 # Smoke test downloaded image
 bus.jpg
+
+# MLflow local data
+data/mlflow-local/
+data/mlflow-server/
+# YOLO training runs
+runs/
